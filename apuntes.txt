@@ -1,0 +1,17 @@
+INICIO
+
+ - Calendario > que se visualicen actividades.
+ - Cartel con info
+ - Mirar tarjeta de instagram
+
+ACTIVIDADES
+ - Tarjetas de actividades (Añadir View actividad)
+ - Filtros: fecha y tipo
+
+PUBLICACIONES
+ - Tarjetas
+
+CONOCENOS
+ - Junta y monitores
+
+AÑADIR CONTACTAR
