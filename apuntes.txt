@@ -1,7 +1,6 @@
 INICIO
-
- - Calendario > que se visualicen actividades.
- - Cartel con info
+ - Calendario > que se visualicen actividades. DONE
+ - Cartel con info DONE
  - Mirar tarjeta de instagram
 
 ACTIVIDADES

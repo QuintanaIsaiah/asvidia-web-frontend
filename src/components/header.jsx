@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav, Dropdown } from 'rsuite'
 import { Link } from 'react-router-dom'
-import logo from '../assets/images/logo-transparent.png'
+import logo from '../assets/images/logo-horizontal-transparent.png'
 
 function Header() {
   return (
