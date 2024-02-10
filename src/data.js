@@ -3,12 +3,14 @@ const eventos = [
   {
     time: '2024-02-09T10:30:00',
     title: 'Evento 1 - 9 de febrero',
-    tipo: 'excursion'
+    tipo: 'excursion',
+    ubicacion: '',
+    descripcion: ''
   },
   {
     time: '2024-02-10T12:00:00',
     title: 'Evento 2 - 10 de febrero',
-    tipo: 'campamento'
+    tipo: 'actividad'
   },
   {
     time: '2024-02-11T09:30:00',
@@ -18,7 +20,7 @@ const eventos = [
   {
     time: '2024-02-15T09:30:00',
     title: 'Evento 4 - 15 de febrero',
-    tipo: 'campamento'
+    tipo: 'actividad'
   },
   {
     time: '2024-02-16T12:30:00',
@@ -28,7 +30,7 @@ const eventos = [
   {
     time: '2024-02-17T14:00:00',
     title: 'Evento 6 - 17 de febrero',
-    tipo: 'campamento'
+    tipo: 'actividad'
   },
   {
     time: '2024-02-21T17:00:00',
