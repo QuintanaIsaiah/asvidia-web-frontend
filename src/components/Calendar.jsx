@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { Calendar, Badge, Whisper, Popover } from 'rsuite'
-import eventos from '../data'
+import { eventos } from '../data'
 
 const Calendario = () => {
   const [activeEvent, setActiveEvent] = useState(null)
+  console.log(activeEvent)
 
   function renderCell(date) {
     const list = getTodoList(date)
@@ -63,8 +64,6 @@ export default Calendario
 
 // FUNCION PARA CARGAR EVENTOS DEL CALENDARIO
 function getTodoList(date) {
-  console.log(date)
-
   //Recojo eventos del back
   //Mock
 

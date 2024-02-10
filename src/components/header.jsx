@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, Dropdown } from 'rsuite'
+import { Nav, Dropdown, Button } from 'rsuite'
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo-horizontal-transparent.png'
 
@@ -9,31 +9,26 @@ function Header() {
       <img src={logo} alt="ASVIDIA" className="logo" />
 
       <div className="headerButtons">
-        <Nav.Item eventKey="inicio">
-          <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
-            Inicio
-          </Link>
-        </Nav.Item>
+        <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+          <Button appearance="subtle">Inicio</Button>
+        </Link>
+
         {/* ACTIVIDADES */}
-        <Nav.Item eventKey="actividades">
-          <Link
-            to="/actividades"
-            className="nav-link"
-            style={{ color: 'inherit', textDecoration: 'none' }}
-          >
-            Actividades
-          </Link>
-        </Nav.Item>
+        <Link
+          to="/actividades"
+          className="nav-link"
+          style={{ color: 'inherit', textDecoration: 'none' }}
+        >
+          <Button appearance="subtle">Actividades</Button>
+        </Link>
         {/* PUBLICACIONES */}
-        <Nav.Item eventKey="publicaciones">
-          <Link
-            to="/publicaciones"
-            className="nav-link"
-            style={{ color: 'inherit', textDecoration: 'none' }}
-          >
-            Publicaciones
-          </Link>
-        </Nav.Item>
+        <Link
+          to="/publicaciones"
+          className="nav-link"
+          style={{ color: 'inherit', textDecoration: 'none' }}
+        >
+          <Button appearance="subtle">Publicaciones</Button>
+        </Link>
         {/* TU Y LA DIABETES */}
         <Nav.Item eventKey="tu">
           <Dropdown title={'Tú y la diabetes'}>
@@ -182,15 +177,13 @@ function Header() {
           </Dropdown>
         </Nav.Item>
 
-        <Nav.Item eventKey="login">
-          <Link
-            to="/login"
-            className="nav-link"
-            style={{ color: 'inherit', textDecoration: 'none' }}
-          >
-            Iniciar sesión
-          </Link>
-        </Nav.Item>
+        <Link
+          to="/login"
+          className="nav-link"
+          style={{ color: 'inherit', textDecoration: 'none' }}
+        >
+          <Button appearance="primary">Iniciar sesión</Button>
+        </Link>
       </div>
     </Nav>
   )

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Actividad from '../components/Actividad'
-import eventos from '../data'
+import Actividad from '../components/TarjetaActividad'
+import { eventos } from '../data'
 import { Button, DatePicker } from 'rsuite'
 
 const Actividades = () => {
@@ -9,7 +9,7 @@ const Actividades = () => {
 
   const handleFiltrar = () => {
     // Obtener el mes y el año seleccionados
-    const mesSeleccionado = fecha.getMonth() + 1 // Se agrega 1 porque los meses van de 0 a 11
+    const mesSeleccionado = fecha.getMonth() + 1
     const añoSeleccionado = fecha.getFullYear()
 
     // Filtrar las actividades según el mes y el año seleccionados
@@ -17,7 +17,11 @@ const Actividades = () => {
       const fechaEvento = new Date(evento.time)
       const mesEvento = fechaEvento.getMonth() + 1
       const añoEvento = fechaEvento.getFullYear()
-      return mesEvento === mesSeleccionado && añoEvento === añoSeleccionado
+      return (
+        mesEvento === mesSeleccionado &&
+        añoEvento === añoSeleccionado &&
+        evento.tipo === 'actividad'
+      )
     })
     setActividades(actividadesFiltradas)
   }

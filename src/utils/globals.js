@@ -22,4 +22,6 @@ const email = () => {
   )
 }
 
-export { horario, telefono, email }
+const RECAPTCHA_KEY = '6Ld2T24pAAAAAAU9Ndi6COXjBpM4M94t3qAwlDH6'
+
+export { horario, telefono, email, RECAPTCHA_KEY }

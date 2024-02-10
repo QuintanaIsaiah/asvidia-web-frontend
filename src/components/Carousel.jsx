@@ -1,6 +1,6 @@
 import { Carousel as Car } from 'rsuite'
 import img from '../assets/images/Inicio/DIA MUNDIAL 2023.jpg'
-import img2 from '../assets/images/Inicio/DIA MUNDIAL 14N.jpg'
+import img2 from '../assets/images/Inicio/asociacion.png'
 
 const Carousel = () => {
   return (

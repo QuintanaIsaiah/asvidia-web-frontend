@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import 'rsuite/dist/rsuite.min.css'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css'
 // PAGES
 import Inicio from './pages/Inicio'
@@ -31,10 +31,12 @@ import Register from './pages/register'
 import Opiniones from './pages/Conocenos/PorQueAsociarte/Opiniones'
 import HazteSocio from './pages/Conocenos/PorQueAsociarte/HazteSocio'
 import HazteVoluntario from './pages/Conocenos/PorQueAsociarte/HazteVoluntario'
+import Msg from './utils/Notifications'
 
 const App = () => {
+  const [loggedIn, setLoggedIn] = useState(false)
   return (
-    <Router>
+    <div>
       <Header />
       <div className="page">
         <div className="pageContent">
@@ -70,18 +72,30 @@ const App = () => {
             {/* PUBLICACIONES */}
             <Route path="/publicaciones" exact element={<Publicaciones />} />
             {/* USUARIOS */}
-            <Route path="/login" exact element={<Login />} />
+            <Route
+              path="/login"
+              exact
+              element={<Login setLoggedIn={setLoggedIn} />}
+            />
             <Route path="/register" exact element={<Register />} />
           </Routes>
+          {/* NOTIFICACION DONE */}
+          <Msg
+            showNotification={loggedIn}
+            type={'success'}
+            text={'¡Inicio de sesión completado!'}
+          />
         </div>
         <Footer />
       </div>
-    </Router>
+    </div>
   )
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 )

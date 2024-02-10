@@ -49,5 +49,47 @@ const eventos = [
   }
 ]
 
-export default eventos
-//export { eventos, usuarios };
+const usuarios = [
+  {
+    id: 0,
+    user: 'admin',
+    pass: 'admin',
+    email: 'admin@gmail.com',
+    age: 20,
+    admin: true
+  },
+  {
+    id: 1,
+    user: 'user1',
+    pass: 'password1',
+    email: 'user1@gmail.com',
+    age: 25,
+    admin: false
+  },
+  {
+    id: 2,
+    user: 'user2',
+    pass: 'password2',
+    email: 'user2@gmail.com',
+    age: 30,
+    admin: false
+  },
+  {
+    id: 3,
+    user: 'user3',
+    pass: 'password3',
+    email: 'user3@gmail.com',
+    age: 35,
+    admin: false
+  },
+  {
+    id: 4,
+    user: 'user4',
+    pass: 'password4',
+    email: 'user4@gmail.com',
+    age: 40,
+    admin: false
+  }
+]
+
+export { eventos, usuarios }
