@@ -10,8 +10,8 @@ body {
 
 .page {
   padding-top: 20px;
-  padding-left: 18%;
-  padding-right: 18%;
+  padding-left: 15%;
+  padding-right: 15%;
   /* background-color: #bedbff; */
   border-color: solid red;
 }

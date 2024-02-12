@@ -48,7 +48,7 @@ const Actividades = () => {
         })
       ) : (
         <p>No hay actividades disponibles.</p>
-      )}
+      )}<br /><br /><br /><br />
     </div>
   )
 }

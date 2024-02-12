@@ -46,7 +46,27 @@ const eventos = [
     time: '2024-02-25T22:00:00',
     title: 'Evento 9 - 25 de febrero',
     tipo: 'excursion'
-  }
+  },
+  {
+    time: '2024-03-17T14:00:00',
+    title: 'Evento 10 - 17 de febrero',
+    tipo: 'actividad'
+  },
+  {
+    time: '2024-03-11T14:00:00',
+    title: 'Evento 11 - 17 de febrero',
+    tipo: 'actividad'
+  },
+  {
+    time: '2024-03-05T14:00:00',
+    title: 'Evento 12 - 17 de febrero',
+    tipo: 'actividad'
+  },
+  {
+    time: '2024-03-29T14:00:00',
+    title: 'Evento 13 - 17 de febrero',
+    tipo: 'actividad'
+  },
 ]
 
 const usuarios = [

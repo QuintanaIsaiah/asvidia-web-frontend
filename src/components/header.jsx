@@ -27,7 +27,7 @@ function Header() {
           className="nav-link"
           style={{ color: 'inherit', textDecoration: 'none' }}
         >
-          <Button appearance="subtle">Publicaciones</Button>
+          <Button appearance="subtle">Noticias</Button>
         </Link>
         {/* TU Y LA DIABETES */}
         <Nav.Item eventKey="tu">
